@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas LK5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <!-- KIRI -->
+           <div class="logo-container">
+    <img src="2.png" alt="Logo" class="logo-img">
+    <h2 class="logo-text">Muhamad Septiyan</h2>
+</div>
+
+            <!-- KANAN -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO (biar foto tetap ada) -->
+    <section class="hero">
+        <img src="Septiyan.jpeg" alt="Profile Image">
+        <p>UI/UX Designer & Frontend Developer</p>
+    </section>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- Tentang -->
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <article>
+                <p>
+                    Saya adalah mahasiswa yang fokus pada UI/UX Design dan Frontend Development.
+                    Saya terbiasa merancang antarmuka yang sederhana dan intuitif,
+                    lalu mengimplementasikannya menjadi website yang responsif dan mudah digunakan.
+                </p>
+            </article>
+        </section>
+
+        <!-- Skill -->
+        <section id="skill">
+            <h2>Keahlian</h2>
+
+            <div class="skill-container">
+                <article>
+                    <h3>UI/UX</h3>
+                    <ul>
+                        <li>Wireframing (Figma)</li>
+                        <li>Prototyping</li>
+                        <li>User Flow</li>
+                        <li>UX Research</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Frontend Developer</h3>
+                    <ul>
+                        <li>HTML (dasar)</li>
+                        <li>CSS (Flexbox dan Grid)</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Visual Studio Code</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Canva</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Project -->
+        <section id="proyek">
+            <h2>Proyek</h2>
+
+            <div class="project-container">
+                <article>
+                    <h3>AyumaCare</h3>
+                    <p>Aplikasi pemantauan kesehatan ibu dan anak.</p>
+                </article>
+
+                <article>
+                    <h3>Web UNSU</h3>
+                    <p>Landing page informasi pendaftaran mahasiswa baru.</p>
+                </article>
+
+                <article>
+                    <h3>Binova</h3>
+                    <p>Aplikasi pengelolaan sampah berbasis Android.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Kontak -->
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <article>
+                <p>Email: muhamadseptiyan28@gmail.com</p>
+                <p>No HP: 081359888819</p>
+            </article>
+        </section>
+
+        <!-- Media Sosial -->
+        <section id="media-sosial">
+            <h2>Media Sosial</h2>
+            <article>
+                <div class="social-wrapper" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="https://instagram.com/" target="_blank" class="social-link">Instagram</a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/" target="_blank" class="social-link">GitHub</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Form -->
+<section id="form">
+    <h2>Form Pendaftaran</h2>
+
+    <form id="formPendaftaran">
+        <label>Nama:</label>
+        <input type="text" id="nama" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group" style="display: flex; gap: 20px; align-items: center; margin-top: 5px; margin-bottom: 5px;">
+            <label style="font-weight: 400; font-size: 15px; display: flex; align-items: center; gap: 8px;">
+                <input type="radio" name="jk" value="Laki-laki" required style="width: auto;"> Laki-laki
+            </label>
+            <label style="font-weight: 400; font-size: 15px; display: flex; align-items: center; gap: 8px;">
+                <input type="radio" name="jk" value="Perempuan" required style="width: auto;"> Perempuan
+            </label>
+        </div>
+
+        <label>No HP:</label>
+        <input type="tel" id="hp" required>
+
+        <label>Kategori:</label>
+        <select id="kategori" required>
+            <option value="">-- Pilih --</option>
+            <option>Web Development</option>
+            <option>Desain</option>
+            <option>Konsultasi</option>
+        </select>
+
+        <label>Pesan:</label>
+        <textarea id="pesan" rows="4"></textarea>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- NOTIF -->
+    <div id="notif"></div>
+
+    <!-- PREVIEW -->
+    <div id="preview"></div>
+
+    <!-- HASIL DATA -->
+    <ul id="listData"></ul>
+</section>
+
+<!-- HUBUNGKAN JS -->
+<script src="script.js"></script>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Muhamad Septiyan</p>
+    </footer>
+
+</body>
+
+</html>
